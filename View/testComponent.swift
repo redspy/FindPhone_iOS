@@ -13,8 +13,10 @@ struct testComponent: View {
         nameText = "HanSoul"
     }
     var body: some View {
-        VStack(alignment: .center, spacing: 10) {
+
             
+        VStack {
+
             Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
             Spacer()
             Text(nameText)
@@ -29,6 +31,16 @@ struct testComponent: View {
                 
             Spacer()
         }
+        .frame(
+              minWidth: 0,
+              maxWidth: .infinity,
+              minHeight: 0,
+              maxHeight: .infinity,
+              alignment: .center
+            )
+            
+
+        .background(Color.yellow)
         
     }
     
