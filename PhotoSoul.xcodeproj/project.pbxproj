@@ -16,6 +16,8 @@
 		770F873A28293E8900BF6B4D /* PhotoSoulTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770F873928293E8900BF6B4D /* PhotoSoulTests.swift */; };
 		770F874428293E8900BF6B4D /* PhotoSoulUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770F874328293E8900BF6B4D /* PhotoSoulUITests.swift */; };
 		770F874628293E8900BF6B4D /* PhotoSoulUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770F874528293E8900BF6B4D /* PhotoSoulUITestsLaunchTests.swift */; };
+		77A7DD1C282D36C100FCA21B /* testComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A7DD1B282D36C100FCA21B /* testComponent.swift */; };
+		77A7DD20282D3DF100FCA21B /* pad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77A7DD1F282D3DF100FCA21B /* pad.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		770F873F28293E8900BF6B4D /* PhotoSoulUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoSoulUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		770F874328293E8900BF6B4D /* PhotoSoulUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSoulUITests.swift; sourceTree = "<group>"; };
 		770F874528293E8900BF6B4D /* PhotoSoulUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSoulUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		77A7DD1B282D36C100FCA21B /* testComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testComponent.swift; sourceTree = "<group>"; };
+		77A7DD1F282D3DF100FCA21B /* pad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pad.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 		770F871728293E8000BF6B4D = {
 			isa = PBXGroup;
 			children = (
+				77A7DD1E282D3DB700FCA21B /* Resource */,
+				77A7DD1D282D3DAA00FCA21B /* View */,
 				770F872228293E8000BF6B4D /* PhotoSoul */,
 				770F873828293E8900BF6B4D /* PhotoSoulTests */,
 				770F874228293E8900BF6B4D /* PhotoSoulUITests */,
@@ -98,8 +104,6 @@
 		770F872228293E8000BF6B4D /* PhotoSoul */ = {
 			isa = PBXGroup;
 			children = (
-				770F872328293E8000BF6B4D /* PhotoSoulApp.swift */,
-				770F872528293E8000BF6B4D /* ContentView.swift */,
 				770F872728293E8900BF6B4D /* Assets.xcassets */,
 				770F872C28293E8900BF6B4D /* Persistence.swift */,
 				770F872E28293E8900BF6B4D /* PhotoSoul.xcdatamodeld */,
@@ -131,6 +135,24 @@
 				770F874528293E8900BF6B4D /* PhotoSoulUITestsLaunchTests.swift */,
 			);
 			path = PhotoSoulUITests;
+			sourceTree = "<group>";
+		};
+		77A7DD1D282D3DAA00FCA21B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				770F872528293E8000BF6B4D /* ContentView.swift */,
+				77A7DD1B282D36C100FCA21B /* testComponent.swift */,
+				770F872328293E8000BF6B4D /* PhotoSoulApp.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		77A7DD1E282D3DB700FCA21B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				77A7DD1F282D3DF100FCA21B /* pad.jpg */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77A7DD20282D3DF100FCA21B /* pad.jpg in Resources */,
 				770F872B28293E8900BF6B4D /* Preview Assets.xcassets in Resources */,
 				770F872828293E8900BF6B4D /* Assets.xcassets in Resources */,
 			);
@@ -264,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				770F872D28293E8900BF6B4D /* Persistence.swift in Sources */,
+				77A7DD1C282D36C100FCA21B /* testComponent.swift in Sources */,
 				770F872628293E8000BF6B4D /* ContentView.swift in Sources */,
 				770F872428293E8000BF6B4D /* PhotoSoulApp.swift in Sources */,
 				770F873028293E8900BF6B4D /* PhotoSoul.xcdatamodeld in Sources */,
