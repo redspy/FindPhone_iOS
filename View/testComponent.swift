@@ -61,7 +61,6 @@ struct testComponent_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             testComponent()
-            testComponent()
         }
     }
 }
