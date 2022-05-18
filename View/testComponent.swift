@@ -9,22 +9,25 @@ import SwiftUI
 
 struct testComponent: View {
     @State var nameText: String
+    @State var imageText: String
     init() {
-        nameText = "HanSoul"
+        nameText = "한소을"
+        imageText = "Soul"
     }
     var body: some View {
 
             
         VStack {
 
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            Text("소을이와 다을이")
+            Text("엄마아빠도하자12")
             Spacer()
             Text(nameText)
 
-            Image("pad")
+            Image(imageText)
                 .resizable()
                 .clipShape(Circle())
-                .frame(width: 100, height: 100)
+                .frame(width: 300, height: 300)
                 .shadow(radius: 10)
                 .padding(.bottom)
             Button("Press", action: ButtonAction)
@@ -45,13 +48,15 @@ struct testComponent: View {
     }
     
     func ButtonAction() {
-        if (nameText=="HanSoul")
+        if (nameText=="한다을")
         {
             nameText = "한소을"
+            imageText = "Soul"
         }
         else
         {
-            nameText = "HanSoul"
+            nameText = "한다을"
+            imageText = "Daul"
         }
         
     }
