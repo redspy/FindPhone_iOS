@@ -16,7 +16,7 @@ struct testComponent: View {
     }
     var body: some View {
 
-            
+
         VStack {
 
             Text("소을이와 다을이")
@@ -33,6 +33,9 @@ struct testComponent: View {
             Button("Press", action: ButtonAction)
                 
             Spacer()
+            
+                
+            
         }
         .frame(
               minWidth: 0,
@@ -41,8 +44,6 @@ struct testComponent: View {
               maxHeight: .infinity,
               alignment: .center
             )
-            
-
         .background(Color.yellow)
         
     }
