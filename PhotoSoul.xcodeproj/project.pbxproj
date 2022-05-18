@@ -18,6 +18,7 @@
 		770F874628293E8900BF6B4D /* PhotoSoulUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770F874528293E8900BF6B4D /* PhotoSoulUITestsLaunchTests.swift */; };
 		77739F3828351E6100B6EC24 /* Daul.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77739F3628351E6100B6EC24 /* Daul.jpg */; };
 		77739F3928351E6100B6EC24 /* Soul.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77739F3728351E6100B6EC24 /* Soul.jpg */; };
+		77739F3B28352A2300B6EC24 /* FamilyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77739F3A28352A2300B6EC24 /* FamilyView.swift */; };
 		77A7DD1C282D36C100FCA21B /* testComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A7DD1B282D36C100FCA21B /* testComponent.swift */; };
 		77A7DD20282D3DF100FCA21B /* pad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77A7DD1F282D3DF100FCA21B /* pad.jpg */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		770F874528293E8900BF6B4D /* PhotoSoulUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSoulUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		77739F3628351E6100B6EC24 /* Daul.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Daul.jpg; sourceTree = "<group>"; };
 		77739F3728351E6100B6EC24 /* Soul.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Soul.jpg; sourceTree = "<group>"; };
+		77739F3A28352A2300B6EC24 /* FamilyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyView.swift; sourceTree = "<group>"; };
 		77A7DD1B282D36C100FCA21B /* testComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testComponent.swift; sourceTree = "<group>"; };
 		77A7DD1F282D3DF100FCA21B /* pad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pad.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,6 +149,7 @@
 				770F872528293E8000BF6B4D /* ContentView.swift */,
 				77A7DD1B282D36C100FCA21B /* testComponent.swift */,
 				770F872328293E8000BF6B4D /* PhotoSoulApp.swift */,
+				77739F3A28352A2300B6EC24 /* FamilyView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 			files = (
 				770F872D28293E8900BF6B4D /* Persistence.swift in Sources */,
 				77A7DD1C282D36C100FCA21B /* testComponent.swift in Sources */,
+				77739F3B28352A2300B6EC24 /* FamilyView.swift in Sources */,
 				770F872628293E8000BF6B4D /* ContentView.swift in Sources */,
 				770F872428293E8000BF6B4D /* PhotoSoulApp.swift in Sources */,
 				770F873028293E8900BF6B4D /* PhotoSoul.xcdatamodeld in Sources */,
