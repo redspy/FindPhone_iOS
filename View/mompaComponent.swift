@@ -1,26 +1,25 @@
 //
-//  testComponent.swift
+//  mompaComponent.swift
 //  PhotoSoul
 //
-//  Created by Minsu Han on 2022/05/12.
+//  Created by Minsu Han on 2022/05/19.
 //
 
 import SwiftUI
 
-struct testComponent: View {
+struct mompaComponent: View {
     @State var nameText: String
     @State var imageText: String
     init() {
-        nameText = "한소을"
-        imageText = "Soul"
+        nameText = "엄마"
+        imageText = "insuk"
     }
     var body: some View {
 
-
         VStack {
 
-            Text("소을이와 다을이")
-            Text("엄마아빠도하자12")
+            Text("엄마아빠 결혼")
+            Text("소을다을")
             Spacer()
             Text(nameText)
 
@@ -30,7 +29,7 @@ struct testComponent: View {
                 .frame(width: 300, height: 300)
                 .shadow(radius: 10)
                 .padding(.bottom)
-            Button(nameText + "이다~~", action: ButtonAction)
+            Button(nameText + "다~~", action: ButtonAction)
                 
             Spacer()
             
@@ -44,29 +43,25 @@ struct testComponent: View {
               maxHeight: .infinity,
               alignment: .center
             )
-        .background(Color.yellow)
-        
+        .background(Color.green)
     }
-    
     func ButtonAction() {
-        if (nameText=="한다을")
+        if (nameText=="엄마")
         {
-            nameText = "한소을"
-            imageText = "Soul"
+            nameText = "아빠"
+            imageText = "minsu"
         }
         else
         {
-            nameText = "한다을"
-            imageText = "Daul"
+            nameText = "엄마"
+            imageText = "insuk"
         }
         
     }
 }
 
-struct testComponent_Previews: PreviewProvider {
+struct mompaComponent_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            testComponent()
-        }
+        mompaComponent()
     }
 }
