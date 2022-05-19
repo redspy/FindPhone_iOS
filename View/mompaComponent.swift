@@ -25,6 +25,7 @@ struct mompaComponent: View {
 
             Image(imageText)
                 .resizable()
+                .scaledToFit()
                 .clipShape(Circle())
                 .frame(width: 300, height: 300)
                 .shadow(radius: 10)

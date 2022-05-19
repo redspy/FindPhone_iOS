@@ -10,13 +10,17 @@ import SwiftUI
 struct plusComponent: View {
     @State var firstNum :Int
     @State var secondNum: Int
-    var answer = ["1","2","3"]
+    @State var answer = ["1","2","3"]
+    @State var sum = 0
     @State var selectedStudent: Int
     init(){
         firstNum = Int.random(in: 1...9)
         secondNum = Int.random(in: 1...3)
         selectedStudent = 0
-        
+        sum = firstNum + secondNum;
+        answer[0] = String(sum-1)
+        answer[1] = String(sum)
+        answer[2] = String(sum+1)
         UISegmentedControl.appearance().selectedSegmentTintColor = UIColor.gray
                 
         let attributes: [NSAttributedString.Key:Any] = [
@@ -36,7 +40,7 @@ struct plusComponent: View {
         .pickerStyle(SegmentedPickerStyle())
         .frame(width: .none, height: 30, alignment: .center)
         Text("당신은 " + answer[selectedStudent] + "를 선택하였습니다. ")
-        Rectangle()
+        Rectangle().frame(width: .none, height: 30, alignment: .center).foregroundColor(Color.white)
         Button("이거요", action: answerButton).font(.system(size:40, weight: .bold))
     }
     
@@ -44,6 +48,10 @@ struct plusComponent: View {
     {
         firstNum = Int.random(in: 1...9)
         secondNum = Int.random(in: 1...3)
+        sum = firstNum + secondNum;
+        answer[0] = String(sum-1)
+        answer[1] = String(sum)
+        answer[2] = String(sum+1)
     }
 }
     

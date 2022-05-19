@@ -26,10 +26,12 @@ struct testComponent: View {
 
             Image(imageText)
                 .resizable()
+                .scaledToFit()
                 .clipShape(Circle())
                 .frame(width: 300, height: 300)
                 .shadow(radius: 10)
                 .padding(.bottom)
+                
             Button(nameText + "이다~~", action: ButtonAction)
                 
             Spacer()
