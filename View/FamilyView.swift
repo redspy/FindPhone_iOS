@@ -13,11 +13,15 @@ struct FamilyView: View {
     var body: some View {
         NavigationView {
             
-            VStack(alignment: .leading, spacing: 10) {
+            VStack {
+                Rectangle().frame(height: 10).background(Color.white)
                 NavigationLink("소다", destination: testComponent())
                     .navigationTitle("우리가족")
-                Spacer()
-                NavigationLink("엄마아빠", destination: testComponent())
+                Rectangle().frame(height: 10).background(Color.white)
+                NavigationLink("엄마아빠", destination: mompaComponent())
+                Rectangle().frame(height: 10).background(Color.white)
+                NavigationLink("더하기 놀이",destination: plusComponent())
+                Rectangle().frame(height: 10).background(Color.white)
             }
             
             .frame(
