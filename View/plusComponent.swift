@@ -17,10 +17,10 @@ struct plusComponent: View {
         firstNum = Int.random(in: 1...9)
         secondNum = Int.random(in: 1...3)
         selectedStudent = 0
-        sum = firstNum + secondNum;
-        answer[0] = String(sum-1)
-        answer[1] = String(sum)
-        answer[2] = String(sum+1)
+
+        shuffleNumber(firstNum, secondNum);
+
+        
         UISegmentedControl.appearance().selectedSegmentTintColor = UIColor.gray
                 
         let attributes: [NSAttributedString.Key:Any] = [
@@ -44,14 +44,29 @@ struct plusComponent: View {
         Button("이거요", action: answerButton).font(.system(size:40, weight: .bold))
     }
     
+    func shuffleNumber(_ firstNum:Int, _ secondNum:Int)
+    {
+        sum = firstNum + secondNum;
+        
+        var numList : Array<Int> = [sum-1, sum, sum+1];
+        
+        for i in 0...2
+        {
+            let index = Int.random(in: 0...(2-i));
+            answer[i] = String(numList[index]);
+            numList.remove(at:index);
+        }
+    }
+    
     func answerButton()
     {
         firstNum = Int.random(in: 1...9)
         secondNum = Int.random(in: 1...3)
-        sum = firstNum + secondNum;
-        answer[0] = String(sum-1)
-        answer[1] = String(sum)
-        answer[2] = String(sum+1)
+        shuffleNumber(firstNum, secondNum);
+//        sum = firstNum + secondNum;
+//        answer[0] = String(sum-1)
+//        answer[1] = String(sum)
+//        answer[2] = String(sum+1)
     }
 }
     
