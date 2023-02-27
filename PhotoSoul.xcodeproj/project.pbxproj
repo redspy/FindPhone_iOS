@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71AF3123287D61A9005461FD /* ResultPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AF3122287D61A9005461FD /* ResultPopupView.swift */; };
 		770F872428293E8000BF6B4D /* PhotoSoulApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770F872328293E8000BF6B4D /* PhotoSoulApp.swift */; };
 		770F872628293E8000BF6B4D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770F872528293E8000BF6B4D /* ContentView.swift */; };
 		770F872828293E8900BF6B4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 770F872728293E8900BF6B4D /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		71AF3122287D61A9005461FD /* ResultPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPopupView.swift; sourceTree = "<group>"; };
 		770F872028293E8000BF6B4D /* PhotoSoul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoSoul.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		770F872328293E8000BF6B4D /* PhotoSoulApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSoulApp.swift; sourceTree = "<group>"; };
 		770F872528293E8000BF6B4D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				770F872328293E8000BF6B4D /* PhotoSoulApp.swift */,
 				77739F3A28352A2300B6EC24 /* FamilyView.swift */,
 				7752879B283674E8007C43A3 /* plusComponent.swift */,
+				71AF3122287D61A9005461FD /* ResultPopupView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				77A7DD1C282D36C100FCA21B /* testComponent.swift in Sources */,
 				77739F3B28352A2300B6EC24 /* FamilyView.swift in Sources */,
 				770F872628293E8000BF6B4D /* ContentView.swift in Sources */,
+				71AF3123287D61A9005461FD /* ResultPopupView.swift in Sources */,
 				7752879C283674E8007C43A3 /* plusComponent.swift in Sources */,
 				770F872428293E8000BF6B4D /* PhotoSoulApp.swift in Sources */,
 				770F873028293E8900BF6B4D /* PhotoSoul.xcdatamodeld in Sources */,

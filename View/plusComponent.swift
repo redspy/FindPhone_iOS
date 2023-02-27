@@ -42,6 +42,8 @@ struct plusComponent: View {
         Text("당신은 " + answer[selectedStudent] + "를 선택하였습니다. ")
         Rectangle().frame(width: .none, height: 30, alignment: .center).foregroundColor(Color.white)
         Button("이거요", action: answerButton).font(.system(size:40, weight: .bold))
+        
+        
     }
     
     func shuffleNumber(_ firstNum:Int, _ secondNum:Int)
@@ -63,6 +65,9 @@ struct plusComponent: View {
         firstNum = Int.random(in: 1...9)
         secondNum = Int.random(in: 1...3)
         shuffleNumber(firstNum, secondNum);
+        
+    
+        // ResultPopupView()
 //        sum = firstNum + secondNum;
 //        answer[0] = String(sum-1)
 //        answer[1] = String(sum)
